@@ -1,6 +1,6 @@
 <template>
     <div class="main" ref="main">
-         <div class="back">
+         <div class="back" @click="goback">
              返回
          </div>
          <div class="categroybox">
@@ -18,6 +18,11 @@ export default {
     mounted () {
         const _height=window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
         this.$refs.main.style.height=_height+"px"
+    },
+    methods: {
+        goback(){
+            this.$router.back()
+        }
     }
 }
 </script>
