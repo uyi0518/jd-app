@@ -1,4 +1,4 @@
-# myjd-app
+# jd-app
 
 > A Vue.js project
 
